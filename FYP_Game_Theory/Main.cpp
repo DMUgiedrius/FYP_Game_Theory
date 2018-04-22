@@ -1,6 +1,6 @@
 #include<iostream>
 #include<string>
-
+//RANDOM TEST
 using namespace std;
 
 
@@ -13,7 +13,7 @@ const int bishop = 305;
 const int knight = 300;
 const int rook = 500;
 const int queen = 900;
-const int king = 2000;
+const int king = 2000; 
 
 // an alternative would be to use string constants or another data type
 
@@ -22,7 +22,7 @@ const int king = 2000;
 // the board in regular chess is always 8x8, but for speedy legal move generator
 //other programs use larger than 8x8 where an 8x8 real board exists in a larger array ie 12x14
 // but for simplicity of understanding we will use the simple 8x8
-
+ 
 int board[8][8];
 
 // board [rank] [file];
@@ -32,10 +32,10 @@ int startup[8][8] = { rook, knight, bishop, queen, king, bishop, knight, rook, p
 
 // the startup constant contains the standard starting position of all chess games (not variants)
 //each side has 8 pieces and 8 pawns / all pawns are on the colours respective ranks
-// for black pieces we use -piecetype. (negative)
+// for black pieces we use -piecetype. (negative) 
 
 void setup(void) {
-	int i, j;
+	int i, j; 
 	for (i = 0; i < 8; i++) {
 		for (j = 0; j < 8; j++) {
 			board[i][j] = startup[i][j]; //setup starting position
